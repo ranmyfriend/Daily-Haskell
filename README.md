@@ -63,3 +63,11 @@ Want to declare some variable in GHCI:
 let a = 5 that's it. Haskell will give you this variable whenever you ask. Simply start using an as variable for future usage.
 
 
+**Reference**
+
+https://stackoverflow.com/questions/1012573/getting-started-with-haskell
+
+http://book.realworldhaskell.org/read/getting-started.html
+
+http://learnyouahaskell.com/chapters
+
