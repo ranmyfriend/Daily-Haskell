@@ -127,6 +127,23 @@ Want to declare some variable in GHCI:
 
 let a = 5 that's it. Haskell will give you this variable whenever you ask. Simply start using an as variable for future usage.
 
+**Look for list files in GHCI:**
+
+```ghci> :cd /tmp```
+
+Even you can use same like tab key to find your directory to move inside or your respective file
+
+// When you see an = symbol in Haskell code, it represents “meaning”: the name on the left is defined to be the expression on the right. So in imperative languages =(EqualTo) means we are going to assign something but in Haskell its called expression. Just think of Algebra(x+1 = 3), Do you think we are assigning 3 to x+1. Ha ha.. No we are saying both are equal. ie. LHS = RHS
+
+
+
+
+
+
+
+
+
+
 
 **List comprehensions**
 
@@ -166,4 +183,6 @@ https://stackoverflow.com/questions/1012573/getting-started-with-haskell
 http://book.realworldhaskell.org/read/getting-started.html
 
 http://learnyouahaskell.com/chapters
+
+http://www.seas.upenn.edu/%7Ecis194/spring13/lectures/01-intro.html
 
