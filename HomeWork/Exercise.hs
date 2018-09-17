@@ -25,3 +25,12 @@ removeNonUppercase st = [c | c <- st, c `elem` ['A'..'Z']]
 length' xs = sum[ 1 | _ <- xs]
 
 toDigits n = [read [c] :: Integer | c <- show n]
+
+
+takeFinal :: Integral b => b -> Maybe (b, b)
+takeFinal 0 = Nothing
+takeFinal m = Just (r, q)
+  where (q,r) = m `divMod` 10
+
+_toDigits :: Integral b => b -> [b]
+_toDigits = reverse . unfoldr takeFinal

@@ -40,6 +40,71 @@ infixl 7 *
 
 And also there are infixl and infixr it means, These operators are infix operator which will follow left to right or right to left
 
+
+**Functions**
+
+Haskell is a functional language so the function concept is essential to the language. A function takes one or more arguments and computes a result. Given the same arguments, the result will always be the same. This is similar to a mathematical function and it means that in Haskell there are no side-effects. There are two fundamental operations on functions: function definition (creating a function) and function application (using a function to compute a result).
+
+**Function definitions**
+
+In Haskell, many functions are pre-defined in a standard library called the prelude.
+In due course, we’ll learn how to use many of these standard functions.
+Defining a function
+But the essence of functional programming is defining your own functions to solve your problems!
+
+```
+A function is defined by an equation.
+f = \x -> x+1  -- lambda function
+-- or
+f x = x+1 -- named function
+
+This is equivalent to f(x)=x+1
+ in mathematical notation.
+```
+ 
+
+The left hand side of the equation looks like a variable – and that’s what it is
+The right hand side is an expression that uses the local variables listed in parentheses and defines the result of the expression.
+Function application
+How function application works
+A function definition is an equation, e.g. 𝚏=∖𝚡→𝚡+𝟷
+The left hand side gives the name of the function;
+The right hand side (the “body”) is an expression giving the formal parameters, and the value of the application. The expression may use the parameters.
+
+An application is an expression like f 31, where 31
+ is the argument.
+The application is evaluated by replacing it with the body of the function, where the formal parameters are replaced by the arguments.
+Example of application
+
+```
+f  = \x - > x+1
+  f 3
+--  > {bind x=3}
+  (x+1) where x=3
+--  > {substitute 3 for x}
+  3+1
+--  >
+4
+Multiple arguments and results
+Functions with several arguments
+A function with three arguments:
+
+add3nums = \x y z -> x + y + z
+To use it,
+
+10 + 4* add3nums 1 2 3
+= {- put extra parentheses in to show structure -}
+  10 + ( 4* (add3nums 1 2 3) )
+  -- >
+  10 + (4*(1+2+3) )
+  -- >
+  10 + (4*6)
+  -- >
+  10 + 24
+  -- >
+  34
+```
+
 **Function Syntax**
 
 add n = n + 1
@@ -61,6 +126,37 @@ Okay, We gotta function how we deploy this function into GHCI. We have to follow
 Want to declare some variable in GHCI:
 
 let a = 5 that's it. Haskell will give you this variable whenever you ask. Simply start using an as variable for future usage.
+
+
+**List comprehensions**
+
+Sequences are fine, but sometimes you need more expressive power. A list comprehension is a high level notation for specifying the computation of a list. It is inspired by the mathematical notation for set comprehension.
+
+Let's look at a simple examples of list comprehension:
+
+[3*x | x <- [1..10]]
+
+As you can see, to the left of the bar | we have an expression that is computed for every element of the list to the right. The parameter in the expression is specified using the left arrow <-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 **Reference**

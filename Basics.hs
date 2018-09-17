@@ -1,3 +1,4 @@
+import Data.List
 -- referred @ http://www.seas.upenn.edu/%7Ecis194/spring13/lectures/01-intro.html
 
 -- Compute the sum of the integers from 1 to n.
@@ -40,3 +41,16 @@ isEven n
 hailstoneSeq :: Integer -> [Integer]
 hailstoneSeq 1 = [1]
 hailstoneSeq n = n : hailstoneSeq (hailstone n)
+
+hello :: String -> String
+hello name = "Hello, " ++ name
+
+sq :: Int -> Int -> Int
+sq x y = x * x + y * y
+
+h :: Int -> Int
+h n = n + 1
+
+f = \x y -> x*x + y*y
+
+maxX x y = if x > y then x else y
