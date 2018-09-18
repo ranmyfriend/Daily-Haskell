@@ -136,15 +136,6 @@ Even you can use same like tab key to find your directory to move inside or your
 // When you see an = symbol in Haskell code, it represents “meaning”: the name on the left is defined to be the expression on the right. So in imperative languages =(EqualTo) means we are going to assign something but in Haskell its called expression. Just think of Algebra(x+1 = 3), Do you think we are assigning 3 to x+1. Ha ha.. No we are saying both are equal. ie. LHS = RHS
 
 
-
-
-
-
-
-
-
-
-
 **List comprehensions**
 
 Sequences are fine, but sometimes you need more expressive power. A list comprehension is a high level notation for specifying the computation of a list. It is inspired by the mathematical notation for set comprehension.
@@ -157,14 +148,17 @@ As you can see, to the left of the bar | we have an expression that is computed 
 
 
 
+**In Terminal if you want add mulitple statements**
 
-
-
-
-
-
-
-
+*use command:*
+``` 
+Prelude> :set +m
+Prelude> do x <- getLine
+Prelude|    putStrLn("Hello" ++ x)
+Prelude|
+Steve Jobs
+HelloSteve Jobs
+```
 
 
 
